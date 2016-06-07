@@ -20,6 +20,7 @@ body {
 /* SocialNets icons */
 
 .fbicon {
+  display: block;
   width: 32px;
   height: 32px;
   background-image: url('media/icons/facebook_icon_32.png');
