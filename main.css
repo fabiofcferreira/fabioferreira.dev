@@ -11,6 +11,10 @@ body {
   display: inline-block;
 }
 
+.socialnets * {
+  display: inline-block;
+}
+
 .nickname {
   font-size: 20px;
   font-weight: 300;
