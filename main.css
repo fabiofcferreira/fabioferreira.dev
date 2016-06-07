@@ -16,7 +16,7 @@ body {
 }
 
 .nickname {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
 }
 
@@ -25,7 +25,7 @@ body {
 
 .fbicon {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-image: url('media/icons/facebook_icon_32.png');
 }
