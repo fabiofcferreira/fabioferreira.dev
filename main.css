@@ -8,7 +8,7 @@ body {
 }
 
 .socialnets {
-  
+  display: inline-block;
 }
 
 .nickname {
