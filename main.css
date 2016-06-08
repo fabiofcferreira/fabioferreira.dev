@@ -13,7 +13,7 @@ body {
   background-image: url('media/wallpapers/setup_at_night.jpg');
   filter: blur(5px);
   -webkit-filter: blur(5px);
-  background-size: stretch;
+  background-size: cover;
 }
 
 .name {
