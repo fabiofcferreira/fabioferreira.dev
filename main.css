@@ -9,6 +9,10 @@ body {
   background-color: #ccc;
 }
 
+.container-photo-1 {
+  background-image: url('media/setup_at_night.jpg');
+}
+
 .name {
   font-size: 75px;
   font-weight: 300;
