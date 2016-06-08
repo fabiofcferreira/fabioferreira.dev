@@ -9,7 +9,7 @@ body {
   background-color: #ccc;
 }
 
-.container-photo-1 {
+#container-photo-1 {
   background-image: url('media/wallpapers/setup_at_night.jpg');
 }
 
