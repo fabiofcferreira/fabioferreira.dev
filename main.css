@@ -47,6 +47,61 @@ nav ul li a {
 }
 
 
+.body {
+  width: 100%;
+  height: calc(100% - 4em);
+}
+
+#background {
+  background-image: url("media/wallpapers/jscode.jpg");
+  background-size: cover;
+  filter: blur(5px);
+
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  margin: 5em auto;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 0 #404040;
+  padding: 2em;
+}
+
+#site-about .container {
+  max-width: 60%;
+}
+
+.profile-photo-round {
+  background-image: url("media/photos/profile.jpeg");
+  background-position: 57%;
+  background-size: cover;
+  border-radius: 50%;
+  height: 15em;
+  width: 15em;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.container h1,
+.container h2 {
+  margin: 0 0 0.5em 0;
+  text-align: center;
+}
+
+.container h2 {
+  margin-top: 2em;
+}
+
+.container > p {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
 /* SocialNets icons */
 
 .fbicon {
