@@ -3,6 +3,58 @@ body {
   margin: 0;
   color: black;
   font-size: 1em;
+  user-select: none;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.wallpaper-main {
+  background-image: url("media/wallpapers/jscode.jpg");
+  filter: blur(10px);
+  transform: scale(1.05);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#site-index {
+  overflow: hidden;
+}
+
+#site-index .wallpaper-main  {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#site-index #menu {
+  position: relative;
+  max-width: 50em;
+  width: 50em;
+  max-height: 30em;
+  height: 30em;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#site-index #menu .social a {
+  background-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+}
+
+#site-index #menu .social a:hover {
+  opacity: 0.8;
 }
 
 nav {
@@ -101,19 +153,40 @@ nav ul li a {
   margin: 0 auto;
 }
 
-
 /* SocialNets icons */
 
 .fbicon {
   display: block;
-  width: 16px;
-  height: 16px;
-  background-image: url('media/icons/facebook_icon_16.png');
+  background-image: url('media/icons/facebook_icon.svg');
+  background-size: 2em;
+}
+
+.igicon {
+  display: block;
+  background-image: url('media/icons/instagram_icon.svg');
+  background-size: 2em;
 }
 
 .ghicon {
   display: block;
-  width: 16px;
-  height: 16px;
-  background-image: url('media/icons/github_icon_16.png');
+  background-image: url('media/icons/github_icon.svg');
+  background-size: 2em;
+  filter:invert(100%);
+}
+
+.twicon {
+  display: block;
+  background-image: url('media/icons/twitter_icon2.svg');
+  background-size: 2em;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  background-color: #d3d3d3;
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #505050;
 }
