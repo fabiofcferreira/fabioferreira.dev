@@ -93,7 +93,6 @@ nav ul li a {
   height: 100vh;
   background-image: url("media/wallpapers/jscode.jpg");
   background-size: cover;
-  filter: blur(0.625em);
   transform: scale(1.05);
 }
 
