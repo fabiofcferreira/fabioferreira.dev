@@ -93,7 +93,6 @@ nav ul li a {
   height: 100vh;
   background-image: url("media/wallpapers/jscode.jpg");
   background-size: cover;
-  transform: scale(1.05);
 }
 
 #site-index {
