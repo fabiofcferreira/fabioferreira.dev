@@ -52,7 +52,7 @@ nav ul li {
   font-size: 1em;
 }
 
-nav ul li a {
+nav ul .nav-item a {
   transition: .2s ease-in-out all;
   border-color: #00f3ff;
 }
@@ -60,6 +60,11 @@ nav ul li a {
 nav ul .nav-item:hover a {
   border-bottom: 1px solid #00f3ff;
   color: white;
+}
+
+nav ul .nav-item-home a img {
+  height: 2.5em;
+  width: 2.5em;
 }
 
 nav ul li a {
