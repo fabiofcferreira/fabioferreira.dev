@@ -214,17 +214,23 @@ nav #nav-wrapper {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
   position: relative;
   margin: 5em auto;
-  background-color: #fff;
-  box-shadow: 1px 1px 7px 0 #404040;
   padding: 2em;
 }
 
 #site-about .container {
   max-width: 60%;
+  background: #fff;
+  box-shadow: 1px 1px 7px 0 #404040;
+}
+
+#site-portfolio .container {
+  max-width: 60%;
+  background: #fff;
+  box-shadow: 1px 1px 7px 0 #404040;
 }
 
 .profile-photo-round {
