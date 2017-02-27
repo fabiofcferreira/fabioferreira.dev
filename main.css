@@ -118,7 +118,7 @@ nav ul li a {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-image: url("media/wallpapers/jscode.jpeg");
+  background-image: url("media/wallpapers/jscode.jpg");
   background-size: cover;
 }
 
@@ -234,7 +234,7 @@ nav #nav-wrapper {
 }
 
 .profile-photo-round {
-  background-image: url("media/photos/profile.jpeg");
+  background-image: url("media/photos/profile.jpg");
   background-position: 57%;
   background-size: cover;
   border-radius: 50%;
