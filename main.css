@@ -235,7 +235,7 @@ nav #nav-wrapper {
 
 .profile-photo-round {
   background-image: url("media/photos/profile.jpg");
-  background-position: 57%;
+  background-position-x: 0.5em;
   background-size: cover;
   border-radius: 50%;
   height: 15em;
