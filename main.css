@@ -183,6 +183,8 @@ a.name:hover {
 
 #site-index #menu .social a:hover {
   color: #1e55b8;
+  text-shadow: 0 0 7px #1e55b8;
+  box-shadow: 0 0 7px #1e55b8;
   opacity: 1;
 }
 
