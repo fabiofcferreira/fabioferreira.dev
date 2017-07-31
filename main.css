@@ -10,6 +10,16 @@ body.fadein * {
   animation: fadeIn 1s ease-in-out;
 }
 
+/* Colors */
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+/* Animations */
 .fadein {
   animation: fadeIn .5s ease;
 }
@@ -26,6 +36,11 @@ body.fadein * {
 @keyframes fadeOut {
   0% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+/* Status */
+.active {
+  color: #00f3ff;
 }
 
 /* Website theme */
@@ -54,12 +69,10 @@ nav ul li {
 
 nav ul .nav-item a {
   transition: .2s ease-in-out all;
-  border-color: #00f3ff;
 }
 
 nav ul .nav-item:hover a {
-  border-bottom: 1px solid #00f3ff;
-  color: white;
+  color: #00f3ff;
 }
 
 nav ul .nav-item-home a img {
@@ -68,7 +81,7 @@ nav ul .nav-item-home a img {
 }
 
 nav ul li a {
-  color: #909090;
+  color: #00f3ff;
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -95,23 +108,8 @@ nav ul li a {
   margin: .83em 0;
 }
 
-/* Color */
-.white {
-  color: white;
-}
-
-.black {
-  color: black;
-}
-
-/* Status */
-.active {
-  color: white;
-}
-
 #nav-wrapper ul li a.active {
-  color: white;
-  border-bottom: 1px solid #00f3ff;
+  color: #00f3ff;
 }
 
 .wallpaper-main {
@@ -154,9 +152,15 @@ nav #nav-wrapper {
   transform: translateY(-50%);
 }
 
-#site-index #menu .h1 {
+#site-index menu a.name {
+  transition: .2s ease all;
+  color: white;
   display: block;
   text-decoration: none;
+}
+
+#site-index menu a.name:hover {
+  color: #00f3ff;
 }
 
 #site-index #menu .social ul {
@@ -190,7 +194,7 @@ nav #nav-wrapper {
 }
 
 #site-index #menu .social a:hover {
-  color: #ff9900;
+  color: #00f3ff;
   opacity: 1;
 }
 
@@ -210,7 +214,6 @@ nav #nav-wrapper {
   background-image: url("media/wallpapers/jscode.jpg");
   background-size: cover;
   filter: blur(5px);
-
 }
 
 .container {
@@ -309,19 +312,19 @@ nav #nav-wrapper {
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-  background-color: #d3d3d3;
+  background-color: transparent;
   width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #505050;
+  background-color: #d3d3d3;
 }
 
 ::-webkit-scrollbar:horizontal {
-  background-color: #d3d3d3;
+  background-color: transparent;
   width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  background-color: #505050;
+  background-color: #d3d3d3;
 }
