@@ -4,6 +4,7 @@ body {
   color: black;
   font-size: 1em;
   user-select: none;
+  background: #0A1936;
 }
 
 body.fadein * {
@@ -111,18 +112,9 @@ nav ul li a {
 .h3 {
   font-size: 1.17em;
   margin: .83em 0;
-}
+}~
 
-.wallpaper-main {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  /*
-  background-image: url("media/wallpapers/jscode.jpg");
-  background-size: cover;
-  */
-  background-color: #0A1936;
-}
+/* Index / Main Page */
 
 #site-index {
   overflow: hidden;
@@ -201,37 +193,6 @@ a.name:hover {
   padding: 1em;
 }
 
-.body {
-  display: block;
-
-}
-
-#background {
-  background-image: url("media/wallpapers/jscode.jpg");
-  background-size: cover;
-  filter: blur(5px);
-}
-
-.container {
-  max-width: 70%;
-  margin: 0 auto;
-  position: relative;
-  margin: 5em auto;
-  padding: 2em;
-}
-
-#site-about .container {
-  max-width: 60%;
-  background: #fff;
-  box-shadow: 1px 1px 7px 0 #404040;
-}
-
-#site-portfolio .container {
-  max-width: 60%;
-  background: #fff;
-  box-shadow: 1px 1px 7px 0 #404040;
-}
-
 .profile-photo-round {
   background-image: url("media/photos/profile.jpg");
   background-position-x: 0.5em;
@@ -246,8 +207,15 @@ a.name:hover {
 
 .profile-photo-round .small {
   height: 1em;
-  width: 1em
+  width: 1em;
   margin-bottom: 0em;
+}
+
+/* About page */
+
+#site-about #photo-container {
+  height: 40vh;
+  background: url("media/wallpapers/jscode.jpg");
 }
 
 .container h1,
@@ -323,10 +291,4 @@ a.name:hover {
 
 ::-webkit-scrollbar-thumb:horizontal {
   background-color: #d3d3d3;
-}
-
-/* Easter eggs */
-
-#restinpeacemusic {
-  display: none;
 }
