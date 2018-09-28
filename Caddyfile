@@ -1,6 +1,0 @@
-localhost:80, 192.168.1.2:80, *.ngrok.io:80 {
-	gzip
-	root ./
-
-	rewrite /about /about.html
-}

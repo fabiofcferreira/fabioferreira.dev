@@ -112,9 +112,20 @@ nav ul li a {
 .h3 {
   font-size: 1.17em;
   margin: .83em 0;
-}~
+}
 
 /* Index / Main Page */
+
+#site-index #overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.7;
+  background: #0A1936;
+}
 
 #site-index {
   overflow: hidden;
@@ -127,16 +138,12 @@ nav ul li a {
 }
 
 #site-index #menu {
-  position: relative;
-  max-width: 50em;
-  width: 50em;
-  max-height: 30em;
-  height: 30em;
+  position: absolute;
   margin: 0 auto;
   text-align: center;
-  padding: 2em;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 a.name {
@@ -213,29 +220,6 @@ a.name:hover {
   margin-bottom: 0em;
 }
 
-/* About page */
-
-#site-about #photo-container {
-  height: 40vh;
-  background: url("media/wallpapers/jscode.jpg");
-}
-
-.container h1,
-.container h2 {
-  margin: 0 0 0.5em 0;
-  text-align: center;
-}
-
-.container h2 {
-  margin-top: 2em;
-}
-
-.container > p {
-  text-align: left;
-  width: 50%;
-  margin: 0 auto;
-}
-
 /* SocialNets icons */
 
 .fbicon {
@@ -273,24 +257,4 @@ a.name:hover {
   display: block;
   background-image: url('media/icons/email_icon.svg');
   background-size: 2em;
-}
-
-/* Scrollbar */
-
-::-webkit-scrollbar {
-  background-color: transparent;
-  width: 0.5em;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #d3d3d3;
-}
-
-::-webkit-scrollbar:horizontal {
-  background-color: transparent;
-  width: 0.5em;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-  background-color: #d3d3d3;
 }
