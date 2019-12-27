@@ -1,0 +1,9 @@
+<!-- Styles -->
+{{ $toolkit := resources.Get "/scss/toolkit.scss" | toCSS | minify }}
+<link rel="stylesheet" href={{ $toolkit.Permalink }} />
+
+{{ $mainCSS := resources.Get "/scss/main.scss" | toCSS | minify }}
+<link rel="stylesheet" href={{ $mainCSS.Permalink }} />
+<!-- <link rel="stylesheet" href="/css/main.css" type="text/css"> -->
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,800&display=swap" rel="stylesheet">
