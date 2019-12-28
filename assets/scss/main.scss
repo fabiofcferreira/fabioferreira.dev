@@ -28,7 +28,7 @@ body.dark {
     ul.links a {
       color: var(--on-primarybg);
 
-      &::after {
+      &li::after {
         background-color: var(--teal);
       }
     }
@@ -68,7 +68,6 @@ nav {
 
   ul.links {
     display: flex;
-    width: 30%;
     list-style: none;
     padding: 0;
     margin-left: auto;
@@ -80,7 +79,7 @@ nav {
       text-decoration: none;
       margin: 0 1rem;
 
-      &::after {
+      li::after {
         content: "";
         height: 0.25rem;
         width: 0;
@@ -96,7 +95,7 @@ nav {
       &:hover {
         margin-bottom: 0;
 
-        &::after {
+        li::after {
           width: 100%;
         }
       }
