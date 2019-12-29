@@ -5,7 +5,6 @@ body {
   margin: 0;
 }
 
-
 :root {
   --primary: var(--teal);
   --secondary: var(--orange);
@@ -19,6 +18,9 @@ body {
   --textdark: #101010;
   --textlight: #ccc;
 }
+
+$pageRegularWidth: 60rem;
+$pageMaxWidth: 90%;
 
 body.dark {
   background-color: var(--primarybg);
@@ -46,8 +48,8 @@ nav {
   }
 
   .nav-wrapper {
-    width: 50rem;
-    max-width: 85%;
+    width: $pageRegularWidth;
+    max-width: $pageMaxWidth;
     height: 100%;
     display: flex;
     align-items: center;
@@ -60,6 +62,7 @@ nav {
     color: var(--textlight);
     text-decoration: none;
     transition: color 0.2s ease;
+    letter-spacing: 0.7px;
 
     &:hover {
       color: var(--teal);
@@ -77,7 +80,16 @@ nav {
       font-weight: 500;
       font-size: 1.2rem;
       text-decoration: none;
+      text-transform: lowercase;
       margin: 0 1rem;
+
+      &.active li::after {
+        width: 100%;
+      }
+
+      &#fire li::after {
+        background-color: var(--orange);
+      }
 
       li::after {
         content: "";
@@ -104,5 +116,9 @@ nav {
 }
 
 body #content {
+  width: $pageRegularWidth;
+  max-width: $pageMaxWidth;
   margin-top: 5rem;
+  margin-right: auto;
+  margin-left: auto;
 }

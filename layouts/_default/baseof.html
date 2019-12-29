@@ -12,5 +12,8 @@
     </div>
     
     {{- partial "footer.html" . -}}
+
+    {{ $js := resources.Get "js/app.js" | minify }}
+    <script src={{ $js.Permalink }}></script>
   </body>
 </html>
