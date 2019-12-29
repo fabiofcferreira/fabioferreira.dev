@@ -1,1 +1,1 @@
-.flex{display:flex}.flex.justify-content--center{justify-content:center}.flex.align-items--center{align-items:center}
+.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.flex{display:flex}.flex.justify-content--center{justify-content:center}.flex.align-items--center{align-items:center}.lazyload{filter:blur(0.3rem);transition:filter .3s ease}.lazyload.loaded{filter:blur(0.2px)}

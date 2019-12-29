@@ -1,3 +1,17 @@
+// TEXT
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// DISPLAY
 .flex {
   display: flex;
 }
@@ -8,4 +22,14 @@
 
 .flex.align-items--center {
   align-items: center;
+}
+
+// ANIMATIONS
+.lazyload {
+  filter: blur(0.3rem);
+  transition: filter 0.3s ease;
+
+  &.loaded {
+    filter: blur(0.2px);
+  }
 }
