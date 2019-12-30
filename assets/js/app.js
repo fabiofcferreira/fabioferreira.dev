@@ -2,7 +2,7 @@ function isOnView(el1) {
   let elemStart = el1.offsetTop,
     elemHeight = el1.offsetHeight
 
-  if (window.scrollY < elemStart &&
+  if (window.scrollY < elemStart ||
     window.scrollY + window.innerHeight > elemStart + elemHeight) return true
   
   return false
@@ -42,7 +42,7 @@ function pageIndicator() {
 function loadEffect() {
   let allImages = document.querySelectorAll('img')
   allImages.forEach(el => {
-    if (isOnView(el)) setTimeout(() => el.classList.add('loaded'), 1000)
+    if (isOnView(el)) setTimeout(() => el.classList.add('loaded'), 750)
   })
 
   document.addEventListener('scroll', () => {

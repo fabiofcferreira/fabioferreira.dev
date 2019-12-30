@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main>
+  <article>
+    {{ partial "header/header.html" . }}
+
+    <div id="page-content">
+      <p id="subtitle">
+        {{.Content}}
+      </p>
+
+      <ul class="flex" id="project-list">
+        {{ range .Pages.ByDate.Reverse }}
+          <li>
+            <a href="{{.Permalink}}">
+              <img src={{ .Params.thumbnail }} id="thumbnail">
+              
+              <p class="font-bold" id="title">{{.Title}}</p>
+              <p class="font-light" id="date">{{ .PublishDate.Format "Jan 2, 2006" }}</p>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </article>
+</main>
+{{ end }}

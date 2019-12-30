@@ -1,8 +1,10 @@
 ---
-Title: Upframe
-publishDate: 2019-12-01
-Type: Work
-Project Start: July 2016
-Project End: 
-Role: Co-Founder and Full Stack Developer
+title: Upframe
+date: 2019-12-01
+draft: true
+type: Work
+project start: July 2016
+project end: 
+thumbnail: /media/projects/upframe/thumbnail.png
+role: Co-Founder and Full Stack Developer
 ---

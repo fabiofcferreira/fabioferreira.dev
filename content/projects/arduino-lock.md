@@ -1,9 +1,10 @@
 ---
-Title: Arduino Lock
-publishDate: 2019-12-02
-Type: Side project
-Project Start: July 2019
-Project End: September 2019
-Role: Contract Frontend Developer
+title: Arduino Lock
+date: 2019-12-02
+draft: true
+type: Side project
+project start: July 2019
+project end: September 2019
+thumbnail: /media/projects/upframe/thumbnail.png
 ---
 
