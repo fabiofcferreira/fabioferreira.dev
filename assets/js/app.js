@@ -42,10 +42,8 @@ function pageIndicator() {
 function loadEffect() {
   let allImages = document.querySelectorAll('img')
   allImages.forEach(el => {
-    if (isOnView(el)) setTimeout(() => el.classList.add('loaded'), 500)
+    if (isOnView(el)) setTimeout(() => el.classList.add('loaded'), 1000)
   })
-
-
 
   document.addEventListener('scroll', () => {
     allImages.forEach(el => {
