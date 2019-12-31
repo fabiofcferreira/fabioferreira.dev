@@ -5,5 +5,5 @@ draft: true
 type: Side Project
 project start: December 2019
 project end: 
-thumbnail: /media/projects/upframe/thumbnail.png
+thumbnail: /media/default/preview_225.jpg
 ---
