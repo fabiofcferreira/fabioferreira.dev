@@ -169,8 +169,8 @@ main {
         margin: 0 0 0.25rem 0;
       }
 
-      #date {
-        font-size: 0.75rem;
+      #date-interval {
+        font-size: 0.8rem;
         color: darken(#ccc, 20);
         margin: 0;
       }
@@ -179,6 +179,12 @@ main {
     &:hover #thumbnail {
       transform: scale(1.05);
     }
+  }
+}
+
+#work {
+  .linked-button button {
+    margin-top: 2.5rem;
   }
 }
 

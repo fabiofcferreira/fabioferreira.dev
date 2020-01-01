@@ -14,6 +14,4 @@ I like being my own boss (or my own supervisor) in a way that I don't care how m
 ## No F*#@ing Around
 I don't like bottlenecks or wasted time. Good engineering means great developer (and client) experience, not forgetting good pay. It's very frustrating whenever someone brings useless tech stacks discussions to the table. I try to put myself in the business owner's foot all the time. 
 
-> Have you ever seen somebody change worn tires while going 50km/h? 
-
-## 
+> Have you ever seen somebody change worn tires while going 50km/h?

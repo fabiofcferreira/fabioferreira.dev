@@ -4,3 +4,8 @@ title = "Fábio Ferreira"
 
 [params]
   email = "me@fabioferreira.dev"
+
+[taxonomies]
+  category = "categories"
+  langs = "langs"
+  tag = "tags"

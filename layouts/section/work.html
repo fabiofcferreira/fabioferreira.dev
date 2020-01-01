@@ -15,7 +15,19 @@
               <img src={{ .Params.thumbnail }} class="lazyload" id="thumbnail">
               
               <p class="font-bold" id="title">{{.Title}}</p>
-              <p class="font-light" id="date">{{ .PublishDate.Format "Jan 2, 2006" }}</p>
+              <p id="date-interval">
+                {{ if .Params.projectstart }}
+                  {{ .Params.projectstart}}
+                  —
+                  {{ if .Params.projectend }}
+                    {{ .Params.projectend }}
+
+                  {{ else }}
+                    Now
+                  {{ end }}
+                {{ end }}
+              </p>
+              <!-- <p class="font-light" id="date">{{ .PublishDate.Format "Jan 2, 2006" }}</p> -->
             </a>
           </li>
         {{ end }}
