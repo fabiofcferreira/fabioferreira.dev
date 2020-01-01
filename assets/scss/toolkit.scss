@@ -37,6 +37,17 @@
   align-items: center;
 }
 
+// LINK STYLING
+.linked-button {
+  text-decoration: none;
+  text-transform: none;
+}
+
+// POSITIONING
+.center {
+  margin: 0 auto;
+}
+
 // MARGINS
 .ma0 {
   margin: 0;
@@ -45,7 +56,7 @@
 // ANIMATIONS
 .lazyload {
   filter: blur(0.3rem);
-  transition: filter 0.3s ease-in-out;
+  transition: filter 0.5s ease-in-out;
 
   &.loaded {
     filter: blur(0.2px);
