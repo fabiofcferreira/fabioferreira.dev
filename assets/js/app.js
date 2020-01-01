@@ -18,12 +18,13 @@ function navbar() {
 }
 
 function pageIndicator() {
-  let nav = document.querySelector('nav ul.links')
+  let nav = document.querySelector('nav')
+  let navLinks = document.querySelector('nav ul.links')
   let slug = window.location.pathname.split('/').slice(1)[0]
 
   if (slug.length <= 1) return
 
-  nav.querySelectorAll('a').forEach(el => {
+  navLinks.querySelectorAll('a').forEach(el => {
     let pathParts = el.href.replace(window.location.origin, "").split('/')
     // detect if any of the tabs are an anchor tag for an element in the same page
     if (pathParts[pathParts.length - 1].startsWith('#')) return
@@ -35,6 +36,8 @@ function pageIndicator() {
 
     if (linkSlug == slug) {
       el.classList.add('active')
+
+      if (slug == "hire") nav.style.setProperty('--accent', 'var(--orange)')
     }
   })
 }
@@ -42,7 +45,7 @@ function pageIndicator() {
 function loadEffect() {
   let allImages = document.querySelectorAll('img')
   allImages.forEach(el => {
-    if (isOnView(el)) setTimeout(() => el.classList.add('loaded'), 1000)
+    if (isOnView(el)) setTimeout(() => el.classList.add('loaded'), 250)
   })
 
   document.addEventListener('scroll', () => {

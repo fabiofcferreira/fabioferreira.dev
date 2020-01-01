@@ -42,6 +42,8 @@ body.dark {
 }
 
 nav {
+  --accent: var(--teal);
+
   position: fixed;
   top: 0;
   z-index: 10;
@@ -50,7 +52,7 @@ nav {
   transition: box-shadow 0.2s ease-in-out;
 
   &.active {
-    box-shadow: 0 2px 7px 2px var(--teal);
+    box-shadow: 0 2px 7px 2px var(--accent);
   }
 
   .nav-wrapper {
@@ -184,8 +186,32 @@ main {
   #how-i-work {
     margin-top: 2rem;
 
+    h2 {
+      color: var(--teal);
+      margin: 0;
+
+      &:not(:first-of-type) {
+        margin-top: 2rem;
+      }
+    }
+
     p {
       margin: 0.5rem 0;
+      font-weight: 300;
+    }
+
+    blockquote p {
+      color: #909090;
+      text-align: center;
+
+      &::before,
+      &::after {
+        content: '"';
+        display: inline-block;
+        font-family: "Garamond";
+        font-size: 2rem;
+        font-weight: 700;
+      }
     }
   }
 
