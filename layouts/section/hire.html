@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main id="hire">
+  <article>
+    {{ partial "header/header.html" . }}
+
+    <div id="page-content">
+      <div id="how-i-work">
+        {{ range split .Content "\n" }}
+          {{ safeHTML . }}
+        {{ end }}
+      </div>
+
+      <div id="calltoaction">
+        <a href="mailto:{{ .Site.Params.email }}" class="block center">
+          {{ .Site.Params.email }}
+        </a>
+      </div>
+    </div>
+  </article>
+</main>
+{{ end }}
