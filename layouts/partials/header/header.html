@@ -2,6 +2,8 @@
   {{ partial "header/background.html" . }}
 
   <div class="text-center" id="header-content">
-    <h1>{{ .Title }}</h1>
+    {{ if (not (.Params.notitle)) }}
+      <h1>{{ .Title }}</h1>
+    {{ end }}  
   </div>
 </header>
