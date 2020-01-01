@@ -1,22 +1,21 @@
 {{ define "main" }}
-<main>
-  <article>
-    {{ partial "header/header.html" . }}
+  <main>
+    <article>
+      {{ partial "header/header.html" . }}
 
-    <div id="page-content">
-      <p id="subtitle">
-        {{.Content}}
-      </p>
-
-      <ul>
-        <!-- Ranges through content/posts/*.md -->
-        {{ range .Pages }}
-          <li>
-            <a href="{{.Permalink}}">{{ .PublishDate.Format "Jan 2, 2006" }} | {{.Title}}</a>
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-  </article>
-</main>
+      <div id="page-content">
+        <p id="subtitle">
+          {{.Content}}
+        </p>
+        
+        <ul>
+          {{ range .Pages }}
+            <li>
+              <a href="{{.Permalink}}">{{ .PublishDate.Format "Jan 2, 2006" }} | {{.Title}}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </article>
+  </main>
 {{ end }}

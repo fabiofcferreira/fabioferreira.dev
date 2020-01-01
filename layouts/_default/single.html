@@ -2,10 +2,10 @@
   <main>
     <article>
       {{ partial "header/header.html" . }}
-    
-      <p>
+      
+      <div id="page-content">
         {{ .Content }}
-      </p>
+      </div>
     </article>
   </main>
 {{ end }}
