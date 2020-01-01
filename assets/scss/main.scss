@@ -183,15 +183,15 @@ main {
 
 // Custom button 
 button.animated {
-  display: block;
   position: relative;
   min-width: 10rem;
   height: 3rem;
-  line-height: 3rem;
   font-size: 1.25rem;
+  // text-transform: lowercase ;
   color: var(--on-primarybg);
   background: transparent;
-  border: none;
+  padding: 0 0.5rem;
+  border: 0.25rem solid var(--orange);
   box-shadow: none;
   outline: none;
   transition: color 0.25s ease;
@@ -200,11 +200,11 @@ button.animated {
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -0.25rem;
+    left: -0.25rem;
     z-index: -1;
     display: block;
-    width: 100%;
+    width: calc(100% + 0.5rem);
     height: 0;
     background-color: var(--orange);
     transition: height 0.4s ease;
