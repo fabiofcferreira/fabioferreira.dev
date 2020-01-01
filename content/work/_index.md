@@ -1,6 +1,6 @@
 ---
 title: The projects I've helped come true
-headerimage: /media/work/code.jpg
+headerimage: /media/work/header.jpg
 headerimagedesc: Creativity is intelligence having fun.
 ---
 

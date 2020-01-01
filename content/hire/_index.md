@@ -1,6 +1,6 @@
 ---
 title: Work with me
-headerimage: /media/hire/work.jpg
+headerimage: /media/hire/header.jpg
 headerimagedesc: Creativity is intelligence having fun.
 ---
 
@@ -8,7 +8,7 @@ headerimagedesc: Creativity is intelligence having fun.
 In a practice, I'm somebody who makes a living by creating and optimizing solutions, in order to help people. Pure and simply, I'm a builder. Like Manny or Bob (but I write code, haha). I may be a little bit difficult to get along with, if you don't
 agree that **remote** and __**flexible schedules**__ are the next big thing.
 
-## Flexible  and Results Oriented
+## Flexiblity and Results Oriented
 I like being my own boss (or my own supervisor) in a way that I don't care how many hours I work, from 9-5 or from 10-6. **Results are results** and I always push my projects to go beyond expectations both in terms of performance, speed and efficency.
 
 ## No F*#@ing Around

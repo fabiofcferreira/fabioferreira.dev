@@ -1,6 +1,6 @@
 ---
 title: My side gigs
-headerimage: /media/projects/lightbulb.jpg
+headerimage: /media/projects/header.jpg
 headerimagedesc: Creativity is intelligence having fun.
 ---
 
