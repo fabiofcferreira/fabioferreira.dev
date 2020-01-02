@@ -5,6 +5,9 @@
 {{ $mainCSS := resources.Get "/scss/main.scss" | toCSS | minify }}
 <link rel="stylesheet" href={{ $mainCSS.Permalink }} />
 
+{{ $mobileCSS := resources.Get "/scss/mobile.scss" | toCSS | minify }}
+<link rel="stylesheet" href={{ $mobileCSS.Permalink }} />
+
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
 

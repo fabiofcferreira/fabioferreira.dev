@@ -1,18 +1,19 @@
 {{ define "main" }}
   <main aria-role="main" id="home">
-    {{ partial "header/header.html" . }}
+    <header>
+      <img src={{ .Params.headerimage }} alt="{{ if .Params.headerimagedesc }} {{ .Params.headerimagedesc }} {{end}}" class="header-background">
+    </header>
 
     <div id="page-content">
+      <div id="profile">
+        <img src="/media/other/profile_1x1.jpg" class="lazyload">
+      </div>
+
       {{ range $paragraph := split .Content "\n" }}
         {{ safeHTML . }}
       {{ end }}
-    </div>
 
-    <div>
-      <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
-      {{ range first 10 .Pages }}
-          {{ .Render "summary"}}
-      {{ end }}
+      {{ partial "social" . }}
     </div>
   </main>
 {{ end }}
