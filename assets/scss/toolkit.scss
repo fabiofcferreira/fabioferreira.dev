@@ -34,6 +34,18 @@
   display: flex;
 }
 
+.flex.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex.flex-wrap--reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex.flex-direction--column {
+  flex-direction: column;
+}
+
 .flex.justify-content--center {
   justify-content: center;
 }

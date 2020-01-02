@@ -1,3 +1,9 @@
+<meta charset="UTF-8">
+<meta name="description" content="Fábio Ferreira is a freelance full-stack developer">
+<meta name="keywords" content="HTML,CSS,React,JavaScript,Node.JS,Golang">
+<meta name="author" content="Fábio Ferreira">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- Styles -->
 {{ $toolkit := resources.Get "/scss/toolkit.scss" | toCSS | minify }}
 <link rel="stylesheet" href={{ $toolkit.Permalink }} />

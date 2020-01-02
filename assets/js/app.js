@@ -11,7 +11,12 @@ function isOnView(el1) {
 function navbar() {
   let navbar = document.querySelector('nav')
 
-  document.addEventListener('scroll', () => {
+  document.addEventListener('touchmove', (ev) => {
+    if (window.scrollY > 0) navbar.classList.add('active')
+    else if (window.scrollY == 0) navbar.classList.remove('active')
+  })
+
+  document.addEventListener('scroll', (ev) => {
     if (window.scrollY > 0) navbar.classList.add('active')
     else if (window.scrollY == 0) navbar.classList.remove('active')
   })

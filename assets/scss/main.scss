@@ -1,5 +1,6 @@
 html,
 body {
+  position: relative;
   font-display: swap;
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -41,12 +42,14 @@ body.dark {
   }
 }
 
-nav {
+nav,
+aside#menu {
   --accent: var(--teal);
-
+  
   position: fixed;
   top: 0;
   z-index: 10;
+  backface-visibility: hidden;
   width: 100%;
   height: 5rem;
   transition: box-shadow 0.2s ease-in-out;
@@ -123,6 +126,17 @@ nav {
   }
 }
 
+aside#menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80vw;
+  height: 100vh;
+  background: #202020;
+  z-index: 20;
+}
+
 main {
   margin-top: 5rem;
 
@@ -141,6 +155,7 @@ main {
   #page-content {
     width: $pageRegularWidth;
     max-width: $pageMaxWidth;
+    overflow: auto;
     margin-right: auto;
     margin-bottom: 6rem;
     margin-left: auto;
@@ -148,6 +163,8 @@ main {
 }
 
 #home {
+  margin-top: 0;
+
   header {
     position: absolute;
     top: 5rem;

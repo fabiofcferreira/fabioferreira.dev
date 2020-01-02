@@ -2,18 +2,18 @@
   <main aria-role="main" id="home">
     <header>
       <img src={{ .Params.headerimage }} alt="{{ if .Params.headerimagedesc }} {{ .Params.headerimagedesc }} {{end}}" class="header-background">
-    </header>
-
-    <div id="page-content">
-      <div id="profile">
-        <img src="/media/other/profile_1x1.jpg" class="lazyload">
+      
+      <div id="page-content">
+        <div id="profile">
+          <img src="/media/other/profile_1x1.jpg" class="lazyload">
+        </div>
+  
+        {{ range $paragraph := split .Content "\n" }}
+          {{ safeHTML . }}
+        {{ end }}
+  
+        {{ partial "social" . }}
       </div>
-
-      {{ range $paragraph := split .Content "\n" }}
-        {{ safeHTML . }}
-      {{ end }}
-
-      {{ partial "social" . }}
-    </div>
+    </header>
   </main>
 {{ end }}
