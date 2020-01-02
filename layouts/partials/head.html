@@ -8,16 +8,15 @@
 <meta name="theme-color" content="#363636">
 
 <!-- Styles -->
-{{ $toolkit := resources.Get "/scss/toolkit.scss" | toCSS | minify }}
-<link rel="stylesheet" href={{ $toolkit.Permalink }} />
+{{ $toolkit := resources.Get "/scss/toolkit.scss" }}
+{{ $mainCSS := resources.Get "/scss/main.scss" }}
+{{ $mobileCSS := resources.Get "/scss/mobile.scss" }}
 
-{{ $mainCSS := resources.Get "/scss/main.scss" | toCSS | minify }}
-<link rel="stylesheet" href={{ $mainCSS.Permalink }} />
-
-{{ $mobileCSS := resources.Get "/scss/mobile.scss" | toCSS | minify }}
-<link rel="stylesheet" href={{ $mobileCSS.Permalink }} />
+{{ $scssBundle := slice $toolkit $mainCSS $mobileCSS | resources.Concat "css/bundle.scss" }}
+{{ $css := $scssBundle | toCSS | minify}}
+<link rel="stylesheet" href={{ $css.Permalink }} />
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet" defer>
 
 <title>{{ .Title }}</title>
