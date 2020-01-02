@@ -4,6 +4,9 @@
 <meta name="author" content="Fábio Ferreira">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Theme Color -->
+<meta name="theme-color" content="#363636">
+
 <!-- Styles -->
 {{ $toolkit := resources.Get "/scss/toolkit.scss" | toCSS | minify }}
 <link rel="stylesheet" href={{ $toolkit.Permalink }} />
