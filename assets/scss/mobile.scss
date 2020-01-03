@@ -1,4 +1,14 @@
 @media only screen and (max-width: 1000px) {
+  nav {
+    ul.links {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+  
   #home header {
     overflow: auto;
 
@@ -14,7 +24,6 @@
       transform: none;
     }
   }
-  
   
   #project-list {
     grid-template-columns: 1fr;

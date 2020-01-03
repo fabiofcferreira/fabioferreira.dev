@@ -11,6 +11,8 @@ function isOnView(el1) {
 function navbar() {
   let navbar = document.querySelector('nav')
 
+  navbar.querySelector('.hamburger').addEventListener('click', (ev) => ev.target.classList.toggle('active'))
+
   document.addEventListener('touchmove', (ev) => {
     if (window.scrollY > 0) navbar.classList.add('active')
     else if (window.scrollY == 0) navbar.classList.remove('active')

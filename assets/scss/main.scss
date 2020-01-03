@@ -42,8 +42,7 @@ body.dark {
   }
 }
 
-nav,
-aside#menu {
+nav {
   --accent: var(--teal);
   
   position: fixed;
@@ -135,6 +134,56 @@ aside#menu {
   height: 100vh;
   background: #202020;
   z-index: 20;
+  transition: transform 0.5s ease;
+
+  &.show {
+    transform: translateX(-100%);
+  }
+
+  ul.links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+
+    a {
+      width: fit-content;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: lowercase;
+      margin: 0 1rem;
+
+      &.active li::after {
+        width: 100%;
+      }
+
+      &#fire li::after {
+        background-color: var(--orange);
+      }
+
+      li::after {
+        content: "";
+        height: 0.25rem;
+        width: 0;
+        display: block;
+        position: relative;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--teal);
+        transition: width 0.2s ease-in-out, color 0.2s ease;
+      }
+
+      &:hover {
+        margin-bottom: 0;
+
+        li::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 main {

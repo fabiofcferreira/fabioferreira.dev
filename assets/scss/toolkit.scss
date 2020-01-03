@@ -61,8 +61,16 @@
 }
 
 // POSITIONING
+.left {
+  margin-right: auto;
+}
+
 .center {
   margin: 0 auto;
+}
+
+.right {
+  margin-left: auto;
 }
 
 // MARGINS
@@ -77,5 +85,47 @@
 
   &.loaded {
     filter: blur(0.2px);
+  }
+}
+
+// CUSTOM ELEMENTS
+.hamburger {
+  position: relative;
+  display: block;
+  width: 1.5rem;
+  height: 0.125rem;
+  background-color: #fff;
+  transition: all .5s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+    height: 0.125rem;
+    background: rgba(255, 255, 255, 1.0);
+    transition: transform .5s ease;
+  }
+
+  &::before {
+    transform: translateY(calc(-100% - 0.25rem));
+  }
+
+  &::after {
+    transform: translateY(calc(100% + 0.25rem));
+  }
+
+  &.active {
+    background-color: rgba(255, 255, 255, 0.0);
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
   }
 }
