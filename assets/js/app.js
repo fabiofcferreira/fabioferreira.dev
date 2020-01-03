@@ -10,8 +10,14 @@ function isOnView(el1) {
 
 function navbar() {
   let navbar = document.querySelector('nav')
+  let hamburger = navbar.querySelector('.hamburger')
+  let overlay = navbar.querySelector('#sidemenu-overlay')
 
-  navbar.querySelector('.hamburger').addEventListener('click', (ev) => ev.target.classList.toggle('active'))
+  // watch for hamburger and overlay click to open and close the sidemenu
+  hamburger.addEventListener('click', (ev) => ev.target.classList.toggle('active'))
+  overlay.addEventListener('click', (ev) => {
+    if (hamburger.classList.contains('active')) hamburger.classList.remove('active')
+  })
 
   document.addEventListener('touchmove', (ev) => {
     if (window.scrollY > 0) navbar.classList.add('active')
@@ -26,26 +32,28 @@ function navbar() {
 
 function pageIndicator() {
   let nav = document.querySelector('nav')
-  let navLinks = document.querySelector('nav ul.links')
+  let navLinks = document.querySelectorAll('ul.links')
   let slug = window.location.pathname.split('/').slice(1)[0]
 
   if (slug.length <= 1) return
 
-  navLinks.querySelectorAll('a').forEach(el => {
-    let pathParts = el.href.replace(window.location.origin, "").split('/')
-    // detect if any of the tabs are an anchor tag for an element in the same page
-    if (pathParts[pathParts.length - 1].startsWith('#')) return
+  navLinks.forEach(list => {
+    list.querySelectorAll('a').forEach(el => {
+      let pathParts = el.href.replace(window.location.origin, "").split('/')
+      // detect if any of the tabs are an anchor tag for an element in the same page
+      if (pathParts[pathParts.length - 1].startsWith('#')) return
 
-    let linkSlug = el.href.replace(window.location.origin, "").split('/')[1]
+      let linkSlug = el.href.replace(window.location.origin, "").split('/')[1]
 
-    // no slug
-    if (linkSlug.length == 0) return
+      // no slug
+      if (linkSlug.length == 0) return
 
-    if (linkSlug == slug) {
-      el.classList.add('active')
+      if (linkSlug == slug) {
+        el.classList.add('active')
 
-      if (slug == "hire") nav.style.setProperty('--accent', 'var(--orange)')
-    }
+        if (slug == "hire") nav.style.setProperty('--accent', 'var(--orange)')
+      }
+    })
   })
 }
 

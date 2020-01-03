@@ -4,8 +4,20 @@
       display: none;
     }
 
-    .hamburger {
+    // display hamburger and sidemenu
+    .hamburger,
+    aside#sidemenu {
       display: block;
+    }
+
+    // animate translation
+    .hamburger.active ~ aside#sidemenu,
+    .hamburger.active ~ #sidemenu-overlay {
+      transform: none;
+    }
+
+    #sidemenu ul.links {
+      display: flex;
     }
   }
   
