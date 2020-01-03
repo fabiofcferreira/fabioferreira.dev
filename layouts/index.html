@@ -1,8 +1,6 @@
 {{ define "main" }}
   <main aria-role="main" id="home">
-    <header>
-      <img src={{ .Params.headerimage }} alt="{{ if .Params.headerimagedesc }} {{ .Params.headerimagedesc }} {{end}}" class="header-background">
-      
+    <header data-src={{ .Params.headerimage }}>
       <div id="page-content">
         <div id="profile">
           <img src="/media/other/profile_1x1.jpg" class="lazyload">
