@@ -140,6 +140,19 @@ nav {
     transition: transform 0.5s ease;
     transform: translateX(100%);
     z-index: 10;
+
+    ul.links {
+      height: calc(100% - 2rem);
+
+      a {
+        font-size: 2rem;
+        font-weight: 300;
+
+        &:not(:last-of-type) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
   }
 
   #sidemenu-overlay {
