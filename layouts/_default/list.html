@@ -3,13 +3,13 @@
     <article>
       {{ partial "header/header.html" . }}
 
-      <div id="page-content">
+      <div class="page-content">
         <p id="subtitle">
           {{.Content}}
         </p>
         
         <ul>
-          {{ range .Pages }}
+          {{ range .Pages.ByPublishDate }}
             <li>
               <a href="{{.Permalink}}">{{ .PublishDate.Format "Jan 2, 2006" }} | {{.Title}}</a>
             </li>

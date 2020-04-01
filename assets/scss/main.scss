@@ -22,8 +22,8 @@ body {
 
 // VARIABLES
 // WEBSITE SIZE
-$pageRegularWidth: 60rem;
-$pageMaxWidth: 90%;
+$pageRegularWidth: 95%;
+$pageMaxWidth: 70rem;
 
 body.dark {
   background-color: var(--primarybg);
@@ -177,18 +177,37 @@ main {
       object-fit: cover;
     }
   
-    h1 {
-      color: var(--orange);
+    .header-content {
+      h1 {
+        font-size: 2.5rem;
+        color: var(--orange);
+      }
     }
   }
 
-  #page-content {
-    width: $pageRegularWidth;
-    max-width: $pageMaxWidth;
+  .page-content {
+    max-width: 95%;
     overflow: auto;
     margin-right: auto;
     margin-bottom: 6rem;
     margin-left: auto;
+
+    p {
+      width: $pageRegularWidth;
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 1.5rem;
+      text-align: center;
+      color: var(--teal);
+    }
   }
 }
 
@@ -275,10 +294,12 @@ main {
 }
 
 #project-list {
+  max-width: 75%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem 2rem;
   padding: 0;
+  margin: 2.5rem auto;
   list-style: none;
 
   li {
@@ -435,6 +456,34 @@ button.animated {
 
     &::before {
       height: 3rem;
+    }
+  }
+}
+
+a,
+a:visited,
+a:focus {
+  color: var(--teal);
+  transition: 0.3s ease color;
+
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+// FIGURES
+figure.demo-page__screenshot {
+  margin: 1.5rem 0;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  figcaption {
+    h4 {
+      font-weight: 400;
+      margin: 0.5rem 0 0 0;
     }
   }
 }

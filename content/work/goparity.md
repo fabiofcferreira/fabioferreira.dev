@@ -1,6 +1,6 @@
 ---
 title: GoParity
-date: 2019-12-29
+date: 2019-10-01
 draft: true
 type: Work
 categories: ["work", "project"]

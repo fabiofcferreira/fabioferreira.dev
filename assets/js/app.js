@@ -57,6 +57,14 @@ function pageIndicator() {
   })
 }
 
+function changeNewLinksTab() {
+  let links = document.links
+  
+  for (let i = 0; i < links.length; i++) {
+    if (links[i].hostname != window.location.hostname) links[i].target = '_blank'
+  }
+}
+
 function loadEffect() {
   let allImages = document.querySelectorAll('img')
   allImages.forEach(el => {
@@ -73,6 +81,7 @@ function loadEffect() {
 function app() {
   navbar()
   pageIndicator()
+  changeNewLinksTab()
 
   loadEffect()
 }

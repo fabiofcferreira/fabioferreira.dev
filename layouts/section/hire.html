@@ -3,7 +3,7 @@
   <article>
     {{ partial "header/header.html" . }}
 
-    <div id="page-content">
+    <div class="page-content">
       <div id="how-i-work">
         {{ range split .Content "\n" }}
           {{ safeHTML . }}
