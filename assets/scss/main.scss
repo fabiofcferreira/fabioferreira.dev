@@ -537,14 +537,16 @@ figure.demo-page__screenshot {
 // Skills list
 ul.skills {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
+  // margin: 1rem 0;
 
   li {
     display: flex;
     align-items: center;
+    margin: 0.5rem 0.25rem;
 
     &::before {
       content: '';
@@ -554,5 +556,19 @@ ul.skills {
       background-color: var(--teal);
       margin-right: 0.5rem;
     }
+  }
+
+  @media (max-width: 400px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 0.25rem;
+
+    li {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 300px) {
+    grid-template-columns: 1fr;
   }
 }
