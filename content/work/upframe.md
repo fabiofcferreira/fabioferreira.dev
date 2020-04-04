@@ -34,12 +34,14 @@ The tech stack was composed by:
 Despite the pre-acceleration programme being adopted by Startup Lisboa, only to become the in-house mentorship programme, we soon realised our technological power was beyond Portugal's standards.
 \
 \
-After months of thinking and self-development we concluded there was (and still is) a lack of mentorship to the promising ecosystem to develop a mentorship platform from scratch. The tech stack used was:
+After months of thinking and self-development we concluded there was (and still is) a lack of mentorship to the promising ecosystem to develop a mentorship platform from scratch to connect aspiring entrepreneurs and successful professionals and mentors in all areas of the tech industry. The tech stack used was:
 {{< skills-list list="Node.js (Express and MySQL),Typescript,React,AWS">}}
 
 I led the development of the platform until December 2019, point at which I left. It was due to the desire to focus on freelancing and personal development.
 
 However, take a look into the webapp as of now:
+
+#### Upframe Connect
 
 {{< figure src="/media/work/upframe/connect-index.png" class="demo-page__screenshot" >}}
 {{< figure src="/media/work/upframe/connect-profile.png" class="demo-page__screenshot" >}}

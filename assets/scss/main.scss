@@ -364,6 +364,7 @@ footer {
       text-decoration: none;
 
       #thumbnail {
+        max-width: 16rem;
         margin-bottom: 0.5rem;
         transition: filter .5s ease-in-out,
           transform .2s ease-in-out;
