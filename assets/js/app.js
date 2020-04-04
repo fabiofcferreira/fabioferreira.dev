@@ -10,13 +10,14 @@ function isOnView(el1) {
 
 function navbar() {
   let navbar = document.querySelector('nav')
-  let hamburger = navbar.querySelector('.hamburger')
+  let hamburgerContainer = navbar.querySelector('.hamburger-container')
+  let hamburger = hamburgerContainer.querySelector('.hamburger')
   let overlay = navbar.querySelector('#sidemenu-overlay')
 
   // watch for hamburger and overlay click to open and close the sidemenu
-  hamburger.addEventListener('click', (ev) => ev.target.classList.toggle('active'))
+  hamburgerContainer.addEventListener('click', (ev) => toggleNavDrawer())
   overlay.addEventListener('click', (ev) => {
-    if (hamburger.classList.contains('active')) hamburger.classList.remove('active')
+    if (hamburger.classList.contains('active')) toggleNavDrawer()
   })
 
   document.addEventListener('touchmove', (ev) => {
@@ -28,6 +29,14 @@ function navbar() {
     if (window.scrollY > 0) navbar.classList.add('active')
     else if (window.scrollY == 0) navbar.classList.remove('active')
   })
+}
+
+function toggleNavDrawer() {
+  let hamburgerContainer = document.querySelector('nav .hamburger-container')
+  let hamburger = hamburgerContainer.querySelector('.hamburger')
+
+  hamburgerContainer.classList.toggle('active')
+  hamburger.classList.toggle('active')
 }
 
 function pageIndicator() {

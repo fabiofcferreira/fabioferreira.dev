@@ -91,7 +91,7 @@
   width: 1.5rem;
   height: 0.125rem;
   background-color: #fff;
-  transition: all .5s ease;
+  transition: all .3s ease;
 
   &::before,
   &::after {
@@ -101,7 +101,7 @@
     width: 1.5rem;
     height: 0.125rem;
     background: rgba(255, 255, 255, 1.0);
-    transition: transform .5s ease;
+    transition: transform .3s ease;
   }
 
   &::before {

@@ -191,14 +191,6 @@ main {
         margin-top: 0.5rem;
       }
     }
-
-    @media (max-width: 640px) {
-      .header-content {
-          h1 {
-          font-size: 1.5rem;
-        }
-      }
-    }
   }
 
   .page-content {
@@ -232,16 +224,6 @@ main {
       font-size: 1.5rem;
       text-align: center;
       color: var(--teal);
-    }
-
-    @media (max-width: 640px) {
-      padding-right: 1rem;
-      padding-left: 1rem;
-      margin-top: 1.5rem;
-
-      p {
-        width: 100%;
-      }
     }
   }
 }
