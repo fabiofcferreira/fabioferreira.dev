@@ -179,8 +179,15 @@ main {
   
     .header-content {
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: var(--orange);
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+      }
+
+      p.date-range {
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
       }
     }
   }
@@ -188,6 +195,7 @@ main {
   .page-content {
     max-width: 95%;
     overflow: auto;
+    margin-top: 3rem;
     margin-right: auto;
     margin-bottom: 6rem;
     margin-left: auto;
@@ -196,6 +204,13 @@ main {
       width: $pageRegularWidth;
       max-width: 50rem;
       margin: 0 auto;
+    }
+
+    ul {
+      width: $pageRegularWidth;
+      max-width: 50rem;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1,
@@ -211,6 +226,27 @@ main {
   }
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+
+  a {
+    color: var(--on-primarybg);
+    text-decoration: none;
+    
+    &:visited,
+    &:active {
+      color: var(--on-primarybg);
+    }
+
+    &:focus,
+    &:hover {
+      color: var(--teal) !important;
+    }
+  }
+}
+
 #home {
   margin-top: 0;
 
@@ -219,7 +255,7 @@ main {
     top: 5rem;
     left: 0;
     width: 100%;
-    height: calc(100vh - 5rem);
+    height: 100%;
 
     &::before {
       content: "";
@@ -244,11 +280,11 @@ main {
     }
   }
 
-  #page-content {
-    position: absolute; 
-    top: calc(50% + 2.5rem);
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .page-content {
+    // position: absolute; 
+    // top: calc(50% + 2.5rem);
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     margin-bottom: 0;
     
     #this-is-my-story {
@@ -265,7 +301,18 @@ main {
     p {
       color:#fff;
     }
+  }
 
+
+  .page-content {
+    width: 100%;
+    min-height: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // Social Networks
     #social-networks ul {
       list-style: none;
       padding: 0;
@@ -460,6 +507,7 @@ button.animated {
   }
 }
 
+// Links
 a,
 a:visited,
 a:focus {
@@ -484,6 +532,29 @@ figure.demo-page__screenshot {
     h4 {
       font-weight: 400;
       margin: 0.5rem 0 0 0;
+    }
+  }
+}
+
+// Skills list
+ul.skills {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+
+  li {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      width: 1.25rem;
+      height: 1.25rem;
+      display: block;
+      background-color: var(--teal);
+      margin-right: 0.5rem;
     }
   }
 }
