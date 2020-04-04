@@ -409,21 +409,11 @@ footer {
     }
 
     p {
-      margin: 0.5rem 0;
+      margin: 0.5rem auto;
       font-weight: 300;
-    }
-
-    blockquote p {
-      color: #909090;
-      text-align: center;
-
-      &::before,
-      &::after {
-        content: '"';
-        display: inline-block;
-        font-family: "Garamond";
-        font-size: 2rem;
-        font-weight: 700;
+      
+      &:first-of-type {
+        text-align: center;
       }
     }
   }
@@ -431,9 +421,10 @@ footer {
   #calltoaction {
     a {
       position: relative;
-      width: fit-content;
+      width: max-content;
       font-size: 1.25rem;
       color: var(--orange);
+      text-align: center;
       text-decoration: none;
       text-transform: none;
       margin-top: 2.5rem;
