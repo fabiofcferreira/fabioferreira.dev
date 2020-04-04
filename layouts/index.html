@@ -6,9 +6,7 @@
           <img src="/media/other/profile_1x1.jpg" class="lazyload">
         </div>
   
-        {{ range $paragraph := split .Content "\n" }}
-          {{ safeHTML . }}
-        {{ end }}
+        {{ .Content }}
   
         {{ partial "social" . }}
       </div>
