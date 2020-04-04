@@ -1,0 +1,37 @@
+{{ define "main" }}
+<main id="projects">
+  <article>
+    {{ partial "header/header.html" . }}
+
+    <div class="page-content">
+      <p id="subtitle">
+        {{.Content}}
+      </p>
+
+      <ul id="project-list">
+        {{ range .Pages.ByDate.Reverse }}
+          <li>
+            <a href="{{.Permalink}}" class="lazyload-container">
+              <img src={{ .Params.thumbnail }} class="lazyload" id="thumbnail">
+              
+              <p class="font-bold" id="title">{{.Title}}</p>
+              <p id="date-interval">
+                {{ if .Params.projectstart }}
+                  {{ .Params.projectstart}}
+                  —
+                  {{ if .Params.projectend }}
+                    {{ .Params.projectend }}
+
+                  {{ else }}
+                    Now
+                  {{ end }}
+                {{ end }}
+              </p>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </article>
+</main>
+{{ end }}

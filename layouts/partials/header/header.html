@@ -1,0 +1,17 @@
+<header>
+  {{ partial "header/background.html" . }}
+
+  <div class="header-content text-center">
+    {{ if (not (.Params.notitle)) }}
+      <h1 id="title">{{ .Title }}</h1>
+
+      {{ if (and .Params.projectstart .Params.projectend) }}
+        <p class="date-range">{{ .Params.projectstart }} - {{ .Params.projectend }}</p>
+      {{ else }}
+        {{ if .Params.projectstart }}
+          <p class="date-range">{{ .Params.projectstart }}</p>
+        {{ end }}
+      {{ end }}
+    {{ end }}  
+  </div>
+</header>

@@ -1,0 +1,127 @@
+// FONT WEIGHT
+.font-light {
+  font-weight: 300;
+  font-family: "Roboto Thin";
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+// TEXT ALIGNMENT
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// DISPLAY
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex.flex-column {
+  flex-direction: column;
+}
+
+.flex.justify-content--center {
+  justify-content: center;
+}
+
+.flex.align-items--center {
+  align-items: center;
+}
+
+// LINK STYLING
+.linked-button {
+  text-decoration: none;
+  text-transform: none;
+}
+
+// POSITIONING
+.left {
+  margin-right: auto;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+// MARGINS
+.ma0 {
+  margin: 0;
+}
+
+// ANIMATIONS
+.lazyload {
+  filter: blur(0.3rem);
+  transition: filter .5s ease-in-out;
+
+  &.loaded {
+    filter: blur(0.2px);
+  }
+}
+
+// CUSTOM ELEMENTS
+.hamburger {
+  position: relative;
+  display: block;
+  width: 1.5rem;
+  height: 0.125rem;
+  background-color: #fff;
+  transition: all .3s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+    height: 0.125rem;
+    background: rgba(255, 255, 255, 1.0);
+    transition: transform .3s ease;
+  }
+
+  &::before {
+    transform: translateY(calc(-100% - 0.25rem));
+  }
+
+  &::after {
+    transform: translateY(calc(100% + 0.25rem));
+  }
+
+  &.active {
+    background-color: rgba(255, 255, 255, 0.0);
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}

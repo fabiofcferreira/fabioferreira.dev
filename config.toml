@@ -1,0 +1,11 @@
+baseURL = "https://fabioferreira.dev"
+languageCode = "en-uk"
+title = "Fábio Ferreira"
+
+[params]
+  email = "me@fabioferreira.dev"
+
+[taxonomies]
+  category = "categories"
+  langs = "langs"
+  tag = "tags"

@@ -1,0 +1,6 @@
+<ul class="skills">
+  {{ $array := split (.Params.list) "," }}
+  {{ range $array }}
+    <li>{{ . }}</li>
+  {{ end }}
+</ul>
